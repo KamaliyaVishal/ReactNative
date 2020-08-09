@@ -1,28 +1,45 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { ListItem } from "react-native-elements";
 import { FlatList } from "react-native";
+import { DISHES } from '../shared/dishes';
 
-function Menu(props) {
+class Menu extends Component {
 
-    const renderMenuItem = ({ item, index }) => {
+    constructor(props) {
+        super(props);
+
+        this.state = {
+            dishes: DISHES
+        };
+    }
+
+    static navigationOptions = {
+        title: 'Menu'
+    };
+
+    render() {
+        const { navigate } = this.props.navigation;
+
+        const renderMenuItem = ({ item, index }) => {
+            return (
+                <ListItem
+                    key={index}
+                    title={item.name}
+                    subtitle={item.description}
+                    hideChevron={true}
+                    onPress={() => navigate('Dishdetail', { dishId: item.id })}
+                    leftAvatar={{ source: require('./images/buffet.png') }}
+                />
+            );
+        }
+
         return (
-            <ListItem
-                key={index}
-                title={item.name}
-                subtitle={item.description}
-                hideChevron={true}
-                onPress={() => props.onPress(item.id)}
-                leftAvatar={{ source: require('./images/buffet.png') }}
+            <FlatList
+                data={this.state.dishes}
+                renderItem={renderMenuItem}
+                keyExtractor={item => item.id.toString()}
             />
         );
     }
-
-    return (
-        <FlatList
-            data={props.dishes}
-            renderItem={renderMenuItem}
-            keyExtractor={item => item.id.toString()}
-        />
-    );
 }
 export default Menu;

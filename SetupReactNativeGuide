@@ -21,3 +21,4 @@ vkamaliy@LIN64015861 MINGW64 /d/Workspaces/ReactNative/confusion (master)
 $ git init
 
 D:\Workspaces\ReactNative\confusion>npm install react-native-elements
+D:\Workspaces\ReactNative\confusion>npm install --save react-navigation@2.0.1
