@@ -1,0 +1,23 @@
+installing expo in your system:
+D:\Workspaces\ReactNative>npm install -g expo-cli
+
+Create account in https://expo.io/
+D:\Workspaces\ReactNative>expo login
+
+D:\Workspaces\ReactNative>expo init confusion
+
+open folder in visual code 
+D:\Workspaces\ReactNative>code .	
+
+D:\Workspaces\ReactNative\confusion>npm start	
+
+Download Expo app in mobile:
+scan QR code it's building JS bundles and start working...
+
+Setup GIT repo:
+goto GitHub -> create new repo 'ReactNative'
+
+vkamaliy@LIN64015861 MINGW64 /d/Workspaces/ReactNative/confusion (master)
+$ git init
+
+
