@@ -21,4 +21,18 @@ vkamaliy@LIN64015861 MINGW64 /d/Workspaces/ReactNative/confusion (master)
 $ git init
 
 D:\Workspaces\ReactNative\confusion>npm install react-native-elements
+
+Course Suggested
+react-native-elements@beta
+
 D:\Workspaces\ReactNative\confusion>npm install --save react-navigation@2.0.1
+
+<View style={{flex:1, paddingTop: Platform.OS === 'ios' ? 0 : Expo.Constants.statusBarHeight }}>
+	<MenuNavigator />
+</View>
+        
+		
+D:\Workspaces\ReactNative\confusion\node_modules\react-native-safe-area-view
+=>index.js
+from: this.view._component.measureInWindow((winX, winY, winWidth, winHeight) => {
+to: this.view.getNode().measureInWindow((winX, winY, winWidth, winHeight) => {
