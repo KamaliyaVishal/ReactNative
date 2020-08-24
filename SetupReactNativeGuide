@@ -31,8 +31,14 @@ D:\Workspaces\ReactNative\confusion>npm install --save react-navigation@2.0.1
 	<MenuNavigator />
 </View>
         
-		
+# For msking mobile supportive o/w Long way: need to migrate to v5 react-navigation v4 to v5 migration.	
 D:\Workspaces\ReactNative\confusion\node_modules\react-native-safe-area-view
 =>index.js
 from: this.view._component.measureInWindow((winX, winY, winWidth, winHeight) => {
 to: this.view.getNode().measureInWindow((winX, winY, winWidth, winHeight) => {
+
+#Setup Redux and Thunk
+D:\Workspaces\\ReactNative\confusion>npm install redux@4.0.0 --save
+D:\Workspaces\\ReactNative\confusion>npm install react-redux@5.0.7 --save
+D:\Workspaces\\ReactNative\confusion>npm install redux-thunk@2.2.0 --save
+D:\Workspaces\\ReactNative\confusion>npm install redux-logger@3.0.6 --save

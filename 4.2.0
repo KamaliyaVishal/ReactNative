@@ -1,0 +1,12 @@
+
+> react-native-elements@2.2.0 postinstall D:\Workspaces\ReactNative\confusion\node_modules\react-native-elements
+> opencollective-postinstall || exit 0
+
++ react-native-vector-icons@4.6.0
+added 17 packages from 76 contributors, removed 6 packages, updated 11 packages and audited 954 packages in 25.02s
+
+36 packages are looking for funding
+  run `npm fund` for details
+
+found 2 low severity vulnerabilities
+  run `npm audit fix` to fix them, or `npm audit` for details
