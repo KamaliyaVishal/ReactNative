@@ -42,3 +42,6 @@ D:\Workspaces\\ReactNative\confusion>npm install redux@4.0.0 --save
 D:\Workspaces\\ReactNative\confusion>npm install react-redux@5.0.7 --save
 D:\Workspaces\\ReactNative\confusion>npm install redux-thunk@2.2.0 --save
 D:\Workspaces\\ReactNative\confusion>npm install redux-logger@3.0.6 --save
+
+#Debugging
+D:\Workspaces\\ReactNative\confusion>npm install global add react-devtools@3.2.3
