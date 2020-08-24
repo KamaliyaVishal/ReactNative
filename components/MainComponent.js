@@ -9,6 +9,7 @@ import About from "./AboutComponent";
 import { Icon } from "react-native-elements";
 import { connect } from 'react-redux';
 import { fetchDishes, fetchComments, fetchPromos, fetchLeaders } from '../redux/ActionCreators';
+import Reservation from './ReservationComponent';
 
 const mapStateToProps = state => {
     return {
@@ -36,10 +37,6 @@ const MenuNavigator = createStackNavigator({
     },
     Dishdetail: {
         screen: Dishdetail,
-        navigationOptions: ({ navigation }) => ({
-            headerLeft: <Icon name="menu" size={24} color="white"
-                onPress={() => navigation.toggleDrawer()} />
-        })
     }
 },
     {
@@ -117,6 +114,30 @@ const AboutNavigator = createStackNavigator({
     })
 });
 
+
+const ReservationNavigator = createStackNavigator({
+    Reservation: {
+        screen: Reservation,
+        navigationOptions: ({ navigation }) => ({
+            headerLeft: <Icon name="menu" size={24} color="white"
+                onPress={() => navigation.toggleDrawer()} />
+        })
+    }
+}, {
+    navigationOptions: ({ navigation }) => ({
+        headerStyle: {
+            backgroundColor: "currentcolor"
+        },
+        headerTitleStyle: {
+            color: "#fff"
+        },
+        headerTintColor: "#fff",
+        headerLeft: <Icon name="menu" size={24}
+            iconStyle={{ color: 'white' }}
+            onPress={() => navigation.navigate('DrawerToggle')} />
+    })
+})
+
 const MainNavigator = createDrawerNavigator({
     Home:
     {
@@ -161,7 +182,24 @@ const MainNavigator = createDrawerNavigator({
                 <Icon name='address-card' type='font-awesome' size={24} color={tintcolor} />
             )
         },
+    },
+    Reservation:
+    {
+        screen: ReservationNavigator,
+        navigationOptions: {
+            title: 'Reserve Table',
+            drawerLabel: 'Reserve Table',
+            drawerIcon: ({ tintColor, focused }) => (
+                <Icon
+                    name='cutlery'
+                    type='font-awesome'
+                    size={24}
+                    iconStyle={{ color: tintColor }}
+                />
+            ),
+        }
     }
+
 }, {
     drawerBackgroundColor: 'white',
     //contentComponent: CustomDrawerContentComponent
