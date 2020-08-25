@@ -47,5 +47,8 @@ D:\Workspaces\\ReactNative\confusion>npm install redux-logger@3.0.6 --save
 D:\Workspaces\\ReactNative\confusion>npm install global add react-devtools@3.2.3
 
 D:\Workspaces\\ReactNative\confusion>npm install react-native-datepicker@1.7.2
+
+D:\Workspaces\\ReactNative\confusion>npm install react-native-swipeout@2.3.3
+#Dependencies 
 D:\Workspaces\\ReactNative\confusion>npm install react-native-vector-icons@>6.6.0
 D:\Workspaces\\ReactNative\confusion>npm install react-native-elements@2.2.1
