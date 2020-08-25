@@ -37,6 +37,14 @@ D:\Workspaces\ReactNative\confusion\node_modules\react-native-safe-area-view
 from: this.view._component.measureInWindow((winX, winY, winWidth, winHeight) => {
 to: this.view.getNode().measureInWindow((winX, winY, winWidth, winHeight) => {
 
+json-server setup:
+create directory 'json-server'
+D:\Workspaces\json-server>npm install -g json-server --save
+D:\Workspaces\json-server>json-server --watch db.json -d 2000 -p 3001
+// -d 2000 = 2 sec dealy while response 
+// -p 3001 = set port, lite-server already run 3000 that's why we chage this
+
+
 #Setup Redux and Thunk
 D:\Workspaces\\ReactNative\confusion>npm install redux@4.0.0 --save
 D:\Workspaces\\ReactNative\confusion>npm install react-redux@5.0.7 --save
