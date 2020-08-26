@@ -60,3 +60,6 @@ D:\Workspaces\\ReactNative\confusion>npm install react-native-swipeout@2.3.3
 #Dependencies 
 D:\Workspaces\\ReactNative\confusion>npm install react-native-vector-icons@>6.6.0
 D:\Workspaces\\ReactNative\confusion>npm install react-native-elements@2.2.1
+
+#Animations
+ D:\Workspaces\\ReactNative\confusion>npm install react-native-animatable@1.2.4
