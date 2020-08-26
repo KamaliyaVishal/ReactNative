@@ -63,3 +63,6 @@ D:\Workspaces\\ReactNative\confusion>npm install react-native-elements@2.2.1
 
 #Animations
  D:\Workspaces\\ReactNative\confusion>npm install react-native-animatable@1.2.4
+
+#redux-persis
+D:\Workspaces\\ReactNative\confusion>npm install redux-persist@5.9.1
